@@ -1,0 +1,17 @@
+{
+  "name": "GRGDO1 MQTT Firmware",
+  "version": "1.0",
+  "home_assistant_domain": "cover",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        { "path": "release/bootloader.bin", "offset": 4096 },
+        { "path": "release/partitions.bin", "offset": 32768 },
+        { "path": "release/boot_app0.bin", "offset": 57344 },
+        { "path": "release/GRGDO1_MQTT_V1.0.bin", "offset": 65536 }
+      ]
+    }
+  ]
+}
